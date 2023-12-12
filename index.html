@@ -15,46 +15,58 @@
     />
   </head>
   <body>
-    <div class="form-container">
-      <div><h2>Let's do this!</h2></div>
-      <div>
-        <form action="#" method="post">
-          <label for="first-name">FIRST NAME</label><br />
-          <input type="text" id="first-name" name="first-name" required /><br />
-
-          <label for="last-name">LAST NAME</label><br />
-          <input type="text" id="last-name" name="last-name" required /><br />
-        </form>
+    <!-- Left Side -->
+    <div class="content">
+      <div class="picture">
+        <div class="logo">
+          <img class="head" src="odin-logo.png" alt="odin-logo" />
+          <h1 class="logo-txt">ODIN</h1>
+        </div>
       </div>
 
-      <div>
+      <!-- Right Side -->
+      <div class="right-side">
+        <div class="dummy-text"></div>
+
         <form action="#">
-          <label for="email">EMAIL</label><br />
-          <input type="email" id="email" name="email" required /><br />
+          <div class="form">
+            <div class="input">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
 
-          <label for="phone-number">PHONE NUMBER</label><br />
-          <input
-            type="tel"
-            id="phone-number"
-            name="phone-number"
-            required
-          /><br />
+            <div class="input">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+
+            <div class="input">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="input">
+              <label for="phone-num">PHONE NUMBER</label>
+              <input type="tel" name="phone-num" id="phone-num" required />
+            </div>
+
+            <div class="input">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+
+            <div class="input">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
         </form>
-      </div>
-
-      <div>
-        <form action="#">
-          <label for="password">PASSWORD</label><br />
-          <input type="password" id="password" name="password" required /><br />
-
-          <label for="confirm-password">CONFIRM PASSWORD</label><br />
-          <input
-            type="password"
-            id="confirm-password"
-            name="confirm-password"
-            required
-          /><br />
-        </form>
+        <div class="log-in"></div>
       </div>
     </div>
   </body>
