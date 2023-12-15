@@ -1,4 +1,7 @@
-:root {}
+:root {
+  --btn-bg-color: #596D48;
+
+}
 
 * {
   box-sizing: border-box;
@@ -61,16 +64,48 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   width: 60vw;
-  padding-left: 4rem;
+}
+
+/* Upper Text CSS */
+
+
+.dummy-text {
+  height: 15.63rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  padding-left: 3.5rem;
+}
+
+.upper-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* FORM STYLING */
+
+.form-h2 {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  margin-bottom: 5.6rem;
+}
+
 .form {
   display: flex;
   flex-flow: row wrap;
-  gap: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  gap: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 2.8rem;
+  padding-left: 3.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .input {
@@ -78,4 +113,21 @@ body {
   flex-flow: column wrap;
   width: 40%;
   font-size: 0.95rem;
+}
+
+/* Log In CSS */
+
+.submit-btn {
+  background-color: var(--btn-bg-color);
+  color: white;
+  padding: 1.06rem 3.125rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 3.5rem;
 }
