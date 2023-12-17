@@ -1,6 +1,7 @@
 :root {
   --btn-bg-color: #596D48;
-
+  --border-color: #E5E7EB;
+  --border-focus-color: #3081D0;
 }
 
 * {
@@ -68,7 +69,6 @@ body {
 
 /* Upper Text CSS */
 
-
 .dummy-text {
   height: 15.63rem;
   display: flex;
@@ -83,6 +83,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.heading-text {
+  font-weight: bold;
+  font-size: 1.375rem;
 }
 
 /* FORM STYLING */
@@ -111,8 +116,22 @@ form {
 .input {
   display: flex;
   flex-flow: column wrap;
+  gap: 0.5625rem;
   width: 40%;
   font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.input-style {
+  border: solid 0.10625rem var(--border-color);
+  border-radius: 0.3125rem;
+  height: 1.75rem;
+}
+
+.input-style:focus {
+  outline: none;
+  border: solid 0.10625rem var(--border-focus-color);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 /* Log In CSS */
@@ -120,9 +139,14 @@ form {
 .submit-btn {
   background-color: var(--btn-bg-color);
   color: white;
+  font-size: 1.125rem;
   padding: 1.06rem 3.125rem;
   border: none;
   border-radius: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--border-focus-color);
 }
 
 .log-in {
@@ -130,4 +154,18 @@ form {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 3.5rem;
+}
+
+.log-in-text {
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--btn-bg-color);
+}
+
+a:hover {
+  color: var(--border-focus-color);
 }
